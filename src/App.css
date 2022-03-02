@@ -6,15 +6,56 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.coin-header{
+  height:80px;
+  margin-left: -80%;
+  margin-top: -20%;
+}
+.text-header{
+  margin-left: -80%;
+  margin-top: -1%;
+  font-size: 16px;
+}
+.coin-class{
+  font-size: 16px;
+  margin-left: -80%;
+  margin-top: -1%;
+}
+.dice-header {
+  height: 50px;
+  margin-left: 80%;
+  margin-top: -5%;
+}
+.dice-text-header {
+  margin-left: 80%;
+  font-size: 16px;
+}
+.button{
+  width: 100px;
+  height: 40px;
+  background-color: #BB3637;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.button-two{
+  width: 100px;
+  height: 40px;
+  background-color: #BB3637;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 1s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #882421;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,6 +70,28 @@
 }
 
 @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#appId {
+  /* height: 250px; */
+  /* width: 250px; */
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  /* background-color: white; */
+  animation: spin infinite 1s linear;
+  animation-play-state: var(--status);
+}
+#paused {
+  animation-play-state: paused;
+}
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
