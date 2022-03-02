@@ -55,9 +55,8 @@ function App() {
           <img src={wheel} style={{height:'350px', width:'340px'}} alt="logo" />
         </div>
         
-          <button className='button' onClick={handlePause}>Spin</button>
-          <br />
-          <br />
+          <button className='button' style={{marginBottom:"20px"}} onClick={handlePause}>Spin</button>
+
           <button className='button-two' onClick={()=>window.location.reload()}>Leave Game</button>
       </header>
     </div>
